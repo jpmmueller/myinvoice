@@ -5,7 +5,8 @@ margin: 20px auto;
 }
  
 header {
-padding: 10px;
+text-align: center;
+padding-bottom: 10px;
 border-bottom: 1px solid #e5e5e5;
 }
  
@@ -15,7 +16,11 @@ font-weight: normal;
 padding: 0px;
 margin: 0px;
 }
- 
+
+#mid_container h1 {
+    font-weight: normal;
+}
+
 #movieslist{
 margin: 20px 0;
 }
