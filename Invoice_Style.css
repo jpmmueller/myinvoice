@@ -17,7 +17,15 @@ padding: 0px;
 margin: 0px;
 }
 
+#mid_container {
+  padding-bottom: 50px;
+}
+
 #mid_container h1 {
+    font-weight: bold;
+}
+
+#mid_container h2 {
     font-weight: normal;
 }
 
