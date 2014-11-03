@@ -44,6 +44,22 @@ background-color: green;
     font-weight: normal;
 }
 
+.small_frame{
+    text-decoration: none;
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+   float: left;
+    margin: 20px;
+    display: inline;
+}
+
+.clear { clear: both;}
+
+li{
+    list-style: none;
+}
+
 #movieslist{
 margin: 20px 0;
 }

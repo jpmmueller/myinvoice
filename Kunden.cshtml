@@ -1,8 +1,21 @@
 ﻿@{
+    var db = Database.Open("Invoice");
+    var KundenQuery ="SELECT * FROM Kunden";
+    var KundenData = db.Query(KundenQuery);
     
 }
 <div id="mid_container">
 <h1>Kunden</h1>
 <h2>Auf dieser Seite dreht sich alles um die Kundenverwaltung. Bestehende Kunden können mit einem Klick auf den 
     jeweiligen Kunden bearbeitet oder gelöscht werden. Neue Kunden könnnen mit einem Klick auf NEUEN KUNDEN ANLEGEN erstellt werden.</h2>
+
+    <div id="frame_container">
+        @foreach(var row in KundenData){
+        <a href="#" class="small_frame">
+                <p>@row.Kunden_Name</p>
+                @row.Kunden_PLZ @row.Kunden_Ort
+               </a>
+                }
+        <div class="clear"></div>
+    </div>
 </div>
